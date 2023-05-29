@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <table border="1" id="mytab">
+      <caption>
+        My Table Caption
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>11</td>
+          <td>SilverStone</td>
+          <td>JS</td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+          <td>UnderWood</td>
+          <td>PHP</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>55</td>
+          <td>Brad</td>
+          <td>JSP</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script>
+      var table = document.getElementById("mytab");
+      table.deleteTFoot();
+
+
+      // tft.innerHTML = "<tr><th>100</th><th>Alias</th><th>Study</th></tr>";
+
+      
+
+
+    </script>
+  </body>
+</html>

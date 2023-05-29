@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <table border="1" id="mytab">
+      <caption>
+        My Table Caption
+      </caption>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Course</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>11</td>
+          <td>SilverStone</td>
+          <td>JS</td>
+        </tr>
+
+        <tr>
+          <td>22</td>
+          <td>UnderWood</td>
+          <td>PHP</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td>55</td>
+          <td>Brad</td>
+          <td>JSP</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <script>
+      var table = document.getElementById("mytab");
+      var bodi = table.tBodies;
+
+      console.log(bodi[0]);
+      document.write(bodi[0].innerHTML);
+
+    //   var tft = table.tFoot;
+
+    //   tft.innerHTML = "<tr><td>100</td><td>Dell</td><td>Intel</td></tr>";
+
+    //   console.log(tft);
+    //   document.write(tft.innerHTML);
+
+
+    //   var thead = table.tHead;
+ 
+    //   thead.innerHTML = "<tr><th>No.</th><th>Student</th><th>Course</th></tr>";
+
+
+    //   console.log(thead.innerHTML);
+    //   document.write(thead.innerHTML);
+
+    //   var tcap = table.caption;
+
+      // console.log(tcap); 
+    //   tcap.innerHTML = "New Caption";
+
+    //   document.write(tcap.innerHTML + "<br>");
+    </script>
+  </body>
+</html>
