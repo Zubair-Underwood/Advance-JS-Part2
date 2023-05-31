@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SilverStone</title>
+</head>
+
+<body>
+
+    <h1>Event Handling</h1>
+    <button id="mybtn">Click Me</button>
+
+    <script>
+        
+        // var btn = document.getElementById("mybtn");
+        // btn.onclick = function(){ 
+        //     alert("Button clicked");
+        // };  
+
+        // document.getElementById("mybtn").onclick = function () {
+        //     alert("button clicked");
+        // };   ===> shorter way to write it.
+
+        function disp (){
+
+            alert("button clicked");
+        }
+
+        document.getElementById("mybtn").onclick = disp;
+
+    </script>
+</body>
+</html>

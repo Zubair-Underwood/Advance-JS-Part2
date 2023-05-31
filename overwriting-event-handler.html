@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <h1>OverWrite</h1>
+    <button id="mybtn">Click Me</button>
+
+    <script>
+      function disp1() {
+        alert("button clicked 1");
+      }
+
+      function disp2() {
+        alert("button clicked 2");
+      }
+
+      document.getElementById("mybtn").onclick = disp1;
+      document.getElementById("mybtn").onclick = disp2;
+    </script>
+  </body>
+</html>

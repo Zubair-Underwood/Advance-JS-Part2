@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <h1>add event listener</h1>
+    <button id="mybtn">Click Me</button>
+
+    <script>
+
+      // function show() {
+      //   alert("button Clicked");
+      // }
+
+      // var btn = document.getElementById("mybtn");
+      // btn.addEventListener("mouseover", show);
+
+      // var btn = document.getElementById("mybtn");
+      // btn.addEventListener("click", function () {
+      //   alert("button clicked");
+      // });                ===> addEventListener Method
+
+
+      function disp1() {
+
+        alert("Button clicked 1");
+      }
+
+      function disp2() {
+
+        alert("button clicked 2");
+      }
+
+      var btn = document.getElementById("mybtn");
+      btn.addEventListener("click",disp1);
+      btn.addEventListener("click",disp2);
+
+    </script>
+  </body>
+</html>
