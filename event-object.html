@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <h1>Event Object</h1>
+    <p id="myp">Click Me</p>
+
+    <script>
+
+      document.getElementById("myp").addEventListener("click", function (e) {
+        // console.log(e.clientX);
+        // console.log(e.clientY);
+        console.log(e.type);
+        console.log(e.currentTarget);
+      });
+
+    </script>
+  </body>
+</html>
