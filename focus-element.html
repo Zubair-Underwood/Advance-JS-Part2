@@ -7,9 +7,11 @@
 
   <body>
     <h1>Focus Event</h1>
-    Name<input type="text" id="mytext" />
+    <div id="mydiv" style="width:300px; height:100px; background-color:aquamarine;
+    padding:10px;">
+    Name: <input type="text" id="mytext" />
   </body>
-
+</div>
   <script>
     var txt = document.getElementById("mytext");
 
@@ -21,7 +23,7 @@
       txt.style.backgroundColor = "white";
     }
 
-    txt.addEventListener("focus", fe);
-    txt.addEventListener("blur", be);
+    txt.addEventListener("focusin", fe, false);
+    txt.addEventListener("focusout", be, false);
   </script>
 </html>
