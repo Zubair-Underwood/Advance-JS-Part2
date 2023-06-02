@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <h1>SilverStone</h1>
+    <!-- <button type="button" id="btn">Create New Window</button> -->
+
+    <button id="close">Close New Window</button>
+    <script>
+      // function createWindow(){
+
+      //     window.open();
+      // }
+
+      // document.getElementById("btn").addEventListener("click", createWindow)
+
+      var newWindow = window.open(
+        "",
+        "_blank",
+        "height=400, width=600,"
+      );
+
+      newWindow.document.write("I'm new Window's content");
+
+      function exit(){
+        newWindow.document.close();
+        newWindow.close();
+      }
+
+      document.getElementById("close").addEventListener("click", exit);
+
+      
+    </script>
+  </body>
+</html>
