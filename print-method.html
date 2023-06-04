@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SilverStone</title>
+  </head>
+
+  <body>
+    <h1>Print Document</h1>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+      voluptatibus ratione nihil similique quas minima ab nisi doloribus
+      consequuntur maxime numquam dolorum quia, inventore iure odit esse! Vitae
+      itaque quia soluta praesentium ullam amet modi quibusdam, debitis nostrum
+      architecto in illo quidem dolores, beatae, est accusamus. Asperiores,
+      repellendus velit amet dolores animi explicabo aliquid! Saepe non nobis
+    </p><br><br>
+    <button type="button" id="btn">Print</button>
+
+    <script>
+
+        function printDoc() {
+
+            window.print();
+        }
+
+        document.getElementById("btn").addEventListener("click", printDoc);
+
+    </script>
+
+  </body>
+</html>
