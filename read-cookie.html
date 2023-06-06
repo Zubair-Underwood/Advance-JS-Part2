@@ -29,9 +29,20 @@
     <script>
       function setCookies() {
         document.cookie =
-          "name=" + document.myform.name.value + "; max-age=60*60*24*10";
-        document.cookie = "email=" + document.myform.email.value + "; max-age=60*60*24*10";
-        document.cookie = "language=" + document.myform.lang.value + "; max-age=60*60*24*10";
+          "name=" +
+          document.myform.name.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
+        document.cookie =
+          "email=" +
+          document.myform.email.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
+        document.cookie =
+          "language=" +
+          document.myform.lang.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
       }
 
       // name=Zubi; email=abc@xyz.com; lang=English
