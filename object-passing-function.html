@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "Underwood"
+      };
+
+      // destructuring
+      function show({ courseName, duration }) {
+        console.log(courseName);
+        console.log(duration);
+        // console.log(a.tutor);
+      }
+      show(course);
+    </script>
+  </body>
+</html>

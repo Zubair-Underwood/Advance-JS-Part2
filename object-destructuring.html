@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var course = {
+        courseName: "JavaScript",
+        duration: "SixMonths",
+        tutor: "Underwood",
+      };
+
+      //   console.log(course.courseName);
+      //   console.log(course.duration);
+      //   console.log(course.tutor);
+
+      //   c = course.courseName;
+      //   d = course.duration;
+      //   t = course.tutor;
+
+      //   console.log(c);
+      //   console.log(d);
+      //   console.log(t);
+
+      // object destructuring
+      var { courseName:cName, duration:dur, tutor:tu } = course;
+    //   console.log(courseName);
+    //   console.log(duration);
+    //   console.log(tutor);
+    
+    console.log(cName);
+    console.log(dur);
+    console.log(tu);
+    </script>
+  </body>
+</html>
