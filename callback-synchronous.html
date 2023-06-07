@@ -4,25 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SilverStone</title>
+    <title>Document</title>
   </head>
   <body>
     <script>
-      function wood(callback) {
-        var a = 101;
-        callback(a);
+      // synchronous
+      function show() {
+        console.log("I am show Function");
       }
 
-      //   wood(function(a) {
-      //     console.log("I am show Function " + a);
-      //   });
+      function geeky(callback) {
+        callback();
+      }
 
-      wood(a =>
-        console.log("I am Show Function " + a)
-      );
+      geeky(show);
 
-
-      
+      console.log("End");
     </script>
   </body>
 </html>
