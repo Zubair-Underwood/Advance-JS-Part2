@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-
+  </head>
+  <body>
     <script>
-        //Function Expression
-        var myfun = function show(a) {
+      //Function Expression
+      var myfun = function show(a) {
+        return a;
+      };
 
-            return a;
-        };
+      //Anonymous Function
+      var myfun1 = function (b) {
+        return b;
+      };
 
-        //Anonymous Function
-        var myfun1 = function(b){
+      // Arrow Function with single parameter
+      // var myfunN = c => c;
+      // document.write(myfunN(10));
 
-            return b;
-        };
+      // Arrow Function with more than one parameter
+    //   var myfunN = (a, b) => a + b;
+    //   document.write(myfunN(10, 20));
 
+      // Another example of arrow function with more than one parameter
+      var myfunN = (a, b) => {
+        return a + b
+      };
+      document.write(myfunN(10, 20));
+
+      /*
+        var myfunN = c => c;            // work
+        var myfunN = c => {c};          // won't work
+        var myfunN = c => {return c};   // work
+        */
     </script>
-    
-</body>
+  </body>
 </html>
