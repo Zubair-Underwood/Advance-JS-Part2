@@ -8,30 +8,37 @@
   </head>
   <body>
     <script>
-      
-      // Refactor using promise
+      // Refactoring using promise
       console.log("start");
 
       function getName(name) {
-        setTimeout(() => {
-          console.log("Inside Name setTimeout");
-          callback(name);
-        }, 2000);
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("Inside Name setTimeout");
+            resolve(name);
+          }, 2000);
+        });
       }
 
       function getHobbies(name) {
-        setTimeout(() => {
-          console.log("Inside Hobbies setTimeout");
-          callback(["Novels", "Cricket"]);
-        }, 2000);
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("Inside Hobbies setTimeout");
+            resolve(["Novels", "Cricket"]);
+          }, 2000);
+        });
       }
 
-      const nm = getName("Silver", (nm) => {
-        console.log(nm);
-        getHobbies(nm, (hobby) => {
-          console.log(hobby);
-        });
-      });
+      //   const nm = getName("Silver", (nm) => {
+      //     console.log(nm);
+      //     getHobbies(nm, (hobby) => {
+      //       console.log(hobby);
+      //     });
+      //   });
+
+      getName("Silver")
+        .then(nm => getHobbies(nm))
+        .then(hobby => console.log(hobby));
       console.log("End");
     </script>
   </body>
