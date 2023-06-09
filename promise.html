@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // basic example 1
+      //   const promiseObj1 = new Promise((resolve, reject) => {
+      //     let req = true;
+      //     if (req == true) {
+      //       resolve([1, 2, 3, 4, 5]);
+      //     } else {
+      //       reject("Request rejected");
+      //     }
+      //   });
+
+      //consuming code
+      //   promiseObj1
+      //     .then(
+      //       (value) => {
+      //         console.log(value);
+      //       }
+      // (error) => {
+      //   console.log(error);
+      // }
+      // )
+      // .catch((error) => {
+      //   console.log(error);
+      // });
+
+      // promise catch finally
+      const promiseObj2 = new Promise((resolve, reject) => {
+        let req = false;
+        if (req == true) {
+          resolve("Request Success");
+        } else {
+          reject("Request Rejected");
+        }
+      })
+        .then((value) => {
+          console.log(value);
+        })
+        .catch((error) => {
+          console.log(error);
+        })
+        .finally(() => {
+          console.log("Cleaned Up");
+        });
+    </script>
+  </body>
+</html>

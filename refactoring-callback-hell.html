@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      // Refactor using promise
+      console.log("start");
+
+      function getName(name) {
+        setTimeout(() => {
+          console.log("Inside Name setTimeout");
+          callback(name);
+        }, 2000);
+      }
+
+      function getHobbies(name) {
+        setTimeout(() => {
+          console.log("Inside Hobbies setTimeout");
+          callback(["Novels", "Cricket"]);
+        }, 2000);
+      }
+
+      const nm = getName("Silver", (nm) => {
+        console.log(nm);
+        getHobbies(nm, (hobby) => {
+          console.log(hobby);
+        });
+      });
+      console.log("End");
+    </script>
+  </body>
+</html>
