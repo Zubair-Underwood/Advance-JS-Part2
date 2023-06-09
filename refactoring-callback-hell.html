@@ -31,14 +31,14 @@
 
       //   const nm = getName("Silver", (nm) => {
       //     console.log(nm);
-      //     getHobbies(nm, (hobby) => {
       //       console.log(hobby);
       //     });
       //   });
 
+      // consuming code
       getName("Silver")
-        .then(nm => getHobbies(nm))
-        .then(hobby => console.log(hobby));
+        .then((nm) => getHobbies(nm))
+        .then((hobby) => console.log(hobby));
       console.log("End");
     </script>
   </body>
